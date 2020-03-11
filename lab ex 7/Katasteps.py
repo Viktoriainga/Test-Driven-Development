@@ -3,8 +3,12 @@ def add(number_str):
         return 0
         
     value = 0
+
     for i in number_str.split(","):
-        i = int(i)
-        value += i
+        i= i.strip().split("\n")
+        for n in i:
+            value += int(n)
 
     return value
+
+print(add("1\n2,3"))

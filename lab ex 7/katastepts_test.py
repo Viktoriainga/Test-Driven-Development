@@ -9,4 +9,4 @@ def test_on_two_digits():
     assert Katasteps.add("2,3") == 5
 
 def test_on_number_of_digits():
-    assert Katasteps.add("1,2,3,4,5,6,7,8,9,10") == 55
+    assert Katasteps.add("1\n2,3") == 6
