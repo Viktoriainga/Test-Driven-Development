@@ -3,10 +3,8 @@ def add(number_str):
         return 0
         
     value = 0
-    for num in number_str:
-        if num.isdigit():
-            value += int(num)
-    
-    return value
+    for i in number_str.split(","):
+        i = int(i)
+        value += i
 
-    
+    return value
