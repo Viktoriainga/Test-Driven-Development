@@ -10,3 +10,6 @@ def test_on_two_digits():
 
 def test_on_number_of_digits():
     assert Katasteps.add("1\n2,3") == 6
+
+def test_on_numbers_bigger_than_1000():
+    assert Katasteps.add("1001,2") == 2
