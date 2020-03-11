@@ -1,6 +1,9 @@
-def add(number1, number2):
-    if number1 == "":
+def add(number_str):
+    if number_str == "":
         return 0
     
+    if len(number_str) == 1:
+        return int(number_str)
 
-    return number1 + number2
+    return int(number_str[0]) + int(number_str[2])
+    
