@@ -1,9 +1,12 @@
 def add(number_str):
     if number_str == "":
         return 0
+        
+    value = 0
+    for num in number_str:
+        if num.isdigit():
+            value += int(num)
     
-    if len(number_str) == 1:
-        return int(number_str)
+    return value
 
-    return int(number_str[0]) + int(number_str[2])
     
